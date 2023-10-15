@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JS,javascript,HTML,html,Markup,CSS,stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="" rel="stylesheet" type="text/css">
+    <title>Second javascript program</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:boder-box;
+            font-family:"Poppins" , sans-serif;
+        }
+
+        :root{
+            --blue:rgb(123, 123, 226);
+            --violet:rgb(210, 79, 210);
+        }
+
+        body{
+            /* background:linear-gradient(135deg , var(--blue) , var(--violet) , #ffffff); */
+            background:black;
+            background-repeat:no-repeat;
+            background-size:cover;
+            filter:invert(20%) , blur(10px);
+
+        }
+
+        .header{
+            position:relative;
+            width:50%;
+            height:200px;
+            border:2px solid red;
+            /* padding: 2% 0; */
+            margin:10% auto;
+            text-align:center;
+            font-size:2.5vw;
+            font-weight:900;
+            color:white;
+            text-decoration:none;
+            text-shadow:0px 0px 20px var(--blue) , 0px 0px 10px var(--violet);
+        }
+
+        .header p{
+            margin:2% 0 0;
+        }
+
+        .header::before{
+            content:"";
+            width:0;
+            height:100%;
+            z-index:-1;
+            position:absolute;
+            background:rgb(46, 42, 42);
+            top:0;
+            left:0;
+            transition: all 1s;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+
+        .header:hover::before{
+            width:100%;
+        }
+
+        #button{
+            margin:10% auto;
+            padding:1.5% 4%;
+            background:var(--blue);
+            color:#ffffff;
+            text-align:center;
+            font-size:1vw;
+            /* outline:1px solid white; */
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+    <!--semantic tags-->
+    <header></header>
+    <nav></nav>
+    <section></section>
+    <main></main>
+    <aside></aside>
+    <details></details>
+    <main></main>
+    <article></article>
+    <summary></summary>
+    <form action="form.php" method="post">
+        <fieldset>
+
+        </fieldset>
+    </form>
+
+    <div class="header">
+        <p id="hello">Hello World</p>
+        <button type="button" id="button" onclick="changer()">Click Me!</button>
+    </div>
+    <script>
+        function changer(){
+            let name=document.getElementById("hello").innerHTML="";
+            let name=document.getElementById("hello").innerHTML="";
+            document.write("");
+        }
+    </script>
+</body>
+</html>
